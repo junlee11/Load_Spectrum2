@@ -1,0 +1,82 @@
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.AssemblyReference.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.SuggestedBindingRedirects.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\MainWindow.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\App.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2_MarkupCompile.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2_MarkupCompile.lref
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\perBusySpinner.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\DeleteYesNoBox.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewFolderInputBox.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewOverRideChk.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameBox.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameWarn.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.exe.config
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.exe
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.pdb
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\App.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\DeleteYesNoBox.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\MainWindow.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewFolderInputBox.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewOverRideChk.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\perBusySpinner.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameBox.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameWarn.baml
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.g.resources
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.Properties.Resources.resources
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.GenerateResource.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.CoreCompileInputs.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.exe
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.pdb
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.exe.config
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.exe
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.pdb
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.AssemblyReference.cache
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.SuggestedBindingRedirects.cache
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\DeleteYesNoBox.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\MainWindow.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewFolderInputBox.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewOverRideChk.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\perBusySpinner.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameBox.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameWarn.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\App.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2_MarkupCompile.cache
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2_MarkupCompile.lref
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\DeleteYesNoBox.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\MainWindow.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewFolderInputBox.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewOverRideChk.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\perBusySpinner.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameBox.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\RenameWarn.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.g.resources
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.Properties.Resources.resources
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.GenerateResource.cache
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.CoreCompileInputs.cache
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.exe
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.pdb
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.exe.manifest
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Load_Spectrum2.application
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.exe.manifest
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.application
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewDistruibute.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewDistruibute.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Ookii.Dialogs.Wpf.dll
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Ookii.Dialogs.Wpf.pdb
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\bin\Debug\Ookii.Dialogs.Wpf.xml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.CopyComplete
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewFTPFilePathDialog.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewFTPFilePathDialog.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\App.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Resources_dic.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewInfoEQP.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewInfoEQP.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewPassword.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\ViewPassword.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\View_MultiRow.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\NewView\View_MultiRow.baml
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Load_Spectrum2.csproj.ResolveComReference.cache
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Lot_Search.g.cs
+C:\Users\ijung\VS CSharp Project\Load_Spectrum2\Load_Spectrum2\obj\Debug\Lot_Search.baml

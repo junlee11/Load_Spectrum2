@@ -1,0 +1,102 @@
+﻿<Window x:Class="Load_Spectrum2.Lot_Search"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Load_Spectrum2"
+        mc:Ignorable="d"
+        Height="400"
+        Width="900"
+        Title="LotSearch"
+        WindowStartupLocation="CenterScreen"
+        UseLayoutRounding="True"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <GroupBox Grid.Row="0" Grid.Column="0" Margin="10 0 5 10" BorderThickness="1">
+            <GroupBox.Header>
+                <Label Content="Lot Search"/>
+            </GroupBox.Header>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+
+                    <Label Content="Line Select" HorizontalAlignment="Center"/>
+                    <ListBox x:Name="List_LotSearch_Line" Height="100" Width="100" Margin="5 5 5 5" 
+                             ItemsSource="{Binding UpdateSourceTrigger=PropertyChanged}"                     
+                             HorizontalAlignment="Left"
+                             SelectionMode="Extended">
+                    </ListBox>
+
+                    <Label Content="Drive Select" HorizontalAlignment="Center"/>
+                    <ComboBox x:Name="combo_LotSearch" Background="White" Width="80" Height="20" Margin="7 0 0 0"
+                              VerticalContentAlignment="Center"
+                              ItemsSource="{Binding source_drive}"
+                              DisplayMemberPath="strdrive">
+
+                    </ComboBox>
+
+                    <StackPanel>
+                        <Label Content="Lot 입력" Margin="5 0 0 0" HorizontalAlignment="Center"/>
+                        <TextBox x:Name="line_LotSearch" Text="LotID" Width="100" Height="20" Margin="5 0 0 0" HorizontalAlignment="Left" CharacterCasing="Upper"/>
+                    </StackPanel>
+
+                    <Button x:Name="btn_enter" Content="검색(Enter)" 
+                            Margin="5 10 0 0" Width="100" Height="25"
+                            Background="Ivory"
+                            UseLayoutRounding="True" 
+                            HorizontalAlignment="Left">
+                        <Button.Effect>
+                            <DropShadowEffect ShadowDepth="2" Direction="315" Color="Black" Opacity="0.5"/>
+                        </Button.Effect>
+                    </Button>
+
+                    <ProgressBar x:Name="pgb_LotSearch" Width="100" Height="20" Minimum="0" Maximum="100" 
+                                 Value="0" Margin="0 10 0 0"/>
+
+                </StackPanel>
+
+                <StackPanel>
+                    <ListView Name="list_set1_local_all"                                    
+                              Margin="10 5 10 0"                              
+                              ItemsSource="{Binding}"  
+                              Height="310">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Line" 
+                                                Width="50"
+                                                DisplayMemberBinding="{Binding local_all_filename}"
+                                                HeaderContainerStyle="{StaticResource LocalHeaderStyle}"/>                                
+                                <GridViewColumn Header="EQP" 
+                                                Width="100"
+                                                DisplayMemberBinding="{Binding local_all_filename}"
+                                                HeaderContainerStyle="{StaticResource LocalHeaderStyle}"/>
+                                <GridViewColumn Header="Image유무" 
+                                                Width="70"
+                                                DisplayMemberBinding="{Binding local_all_filename}"
+                                                HeaderContainerStyle="{StaticResource LocalHeaderStyle}"/>
+                                <GridViewColumn Header="Spectrum유무" 
+                                                Width="80"
+                                                DisplayMemberBinding="{Binding local_all_filename}"
+                                                HeaderContainerStyle="{StaticResource LocalHeaderStyle}"/>
+                                <GridViewColumn Header="Date" 
+                                                Width="220"
+                                                HeaderContainerStyle="{StaticResource LocalHeaderStyle}"
+                                                DisplayMemberBinding="{Binding local_all_date, StringFormat='{}{0:yyyy-MM-dd H:mm}'}"/>
+                                <GridViewColumn Header="Wafer" 
+                                                Width="150"
+                                                HeaderContainerStyle="{StaticResource LocalHeaderStyle}"
+                                                DisplayMemberBinding="{Binding local_all_extension}"/>
+                                
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+
+
+                </StackPanel>
+
+            </StackPanel>
+            
+
+            
+        </GroupBox>
+    </Grid>
+</Window>

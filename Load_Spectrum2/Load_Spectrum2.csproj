@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BCE2E77-0527-4089-AC91-E312935A3F0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Load_Spectrum2</RootNamespace>
+    <AssemblyName>Load_Spectrum2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://LS_C:LS_C%40192.168.0.103:21/test/test1/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.0.103:21/test/test1/</InstallUrl>
+    <ProductName>Load_Spectrum2</ProductName>
+    <PublisherName>이준영</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F82FB28655D26A7C2A9708A3EACC48B3A043D431</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Load_Spectrum2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Ookii.Dialogs.Wpf, Version=5.0.0.0, Culture=neutral, PublicKeyToken=66aa232afad40158, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ookii.Dialogs.Wpf.5.0.1\lib\net462\Ookii.Dialogs.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BehindCode\Class_Set.cs" />
+    <Compile Include="BehindCode\DragAndDrop.cs" />
+    <Compile Include="BehindCode\Global_FunSet.cs" />
+    <Compile Include="BehindCode\SortListViewFunc.cs" />
+    <Compile Include="BehindCode\TrEQPToLocal.cs" />
+    <Compile Include="BehindCode\TrLocalToEQP.cs" />
+    <Compile Include="Lot_Search.xaml.cs">
+      <DependentUpon>Lot_Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewModel\Model_Distribute.cs" />
+    <Compile Include="NewViewModel\ViewModel_Distribute.cs" />
+    <Compile Include="NewViewModel\ViewModel_FTPFilePathDialog.cs" />
+    <Compile Include="NewViewModel\ViewModel_InfoEQP.cs" />
+    <Compile Include="NewView\ViewDistruibute.xaml.cs">
+      <DependentUpon>ViewDistruibute.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewView\ViewFTPFilePathDialog.xaml.cs">
+      <DependentUpon>ViewFTPFilePathDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewView\ViewInfoEQP.xaml.cs">
+      <DependentUpon>ViewInfoEQP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewView\ViewPassword.xaml.cs">
+      <DependentUpon>ViewPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewView\View_MultiRow.xaml.cs">
+      <DependentUpon>View_MultiRow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RenameBox.xaml.cs">
+      <DependentUpon>RenameBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RenameWarn.xaml.cs">
+      <DependentUpon>RenameWarn.xaml</DependentUpon>
+    </Compile>
+    <Page Include="DeleteYesNoBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Lot_Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeleteYesNoBox.xaml.cs">
+      <DependentUpon>DeleteYesNoBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="NewFolderInputBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewOverRideChk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewView\ViewDistruibute.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewView\ViewFTPFilePathDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewView\ViewInfoEQP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewView\ViewPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewView\View_MultiRow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="perBusySpinner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RenameBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RenameWarn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources_dic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NewFolderInputBox.xaml.cs">
+      <DependentUpon>NewFolderInputBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewOverRideChk.xaml.cs">
+      <DependentUpon>NewOverRideChk.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="perBusySpinner.xaml.cs">
+      <DependentUpon>perBusySpinner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="Resources\Setting_EQP.csv" />
+    <EmbeddedResource Include="Resources\Setting_Local_Path.csv" />
+    <EmbeddedResource Include="Resources\LS2_Manual.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_allreset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_foward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_newfolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_trback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_upper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_allreset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_foward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_newfolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_trback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_upper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_allreset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_del.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_foward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_newfolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_trback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_upper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_drive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_notepad.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_warn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_click_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_default_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_active_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_csv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_dat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_htm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_ppt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_py.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\modify_log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="main_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_LTE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_ETL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_ETE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

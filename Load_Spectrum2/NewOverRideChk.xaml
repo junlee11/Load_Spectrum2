@@ -1,0 +1,30 @@
+﻿<Window x:Class="Load_Spectrum2.NewOverRideChk"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Load_Spectrum2"
+        mc:Ignorable="d"
+        Title="덮어씌우기" Height="130" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <TextBlock x:Name="main_txt" Text="이미 존재하는 파일(폴더)명입니다." Margin="10 10 10 0"/>
+            <TextBlock Text="덮어씌우겠습니까?" Margin="10 0 10 5"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_yes" Content="예(Enter)" Height="25" Margin="10 10 5 5" Grid.Column="0" Click="btn_yes_Click"/>
+                <Button x:Name="btn_allyes" Content="모두 예" Margin="5 10 10 5" Grid.Column="1" Click="btn_allyes_Click"/>
+                <Button x:Name="btn_cancel" Content="건너뛰기(ESC)" Margin="5 10 10 5" Grid.Column="2" Click="btn_cancel_Click"/>
+                <Button x:Name="btn_allcancel" Content="모두 건너뛰기" Margin="5 10 10 5" Grid.Column="3" Click="btn_cancel_Click_1"/>
+            </Grid>
+            <TextBlock x:Name="temp_txt" Width="0"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

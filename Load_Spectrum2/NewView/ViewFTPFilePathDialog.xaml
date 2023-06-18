@@ -1,0 +1,132 @@
+﻿<Window x:Class="Load_Spectrum2.NewView.ViewFTPFilePathDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Load_Spectrum2.NewView"
+        xmlns:local_src="clr-namespace:Load_Spectrum2"
+        mc:Ignorable="d"
+        Title="FTP Dialog" Height="430" Width="830"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <!--상단바-->
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="line_ftpdia" Margin="10 5 0 0" Width="575" IsReadOnly="True"/>
+                    <Button x:Name="BackBtn_ftpdia" Margin="5 5 0 0" Style="{StaticResource Style_BackBtn}" 
+                            RenderOptions.BitmapScalingMode="HighQuality"
+                            ToolTip="뒤로" ToolTipService.ShowDuration="20000" ToolTipService.InitialShowDelay="500"
+                            Click="BackBtn_ftpdia_Click"/>
+                    <Button x:Name="FowardBtn_ftpdia" Margin="5 5 0 0" Style="{StaticResource Style_FowardBtn}" 
+                            RenderOptions.BitmapScalingMode="HighQuality"
+                            ToolTip="앞으로" ToolTipService.ShowDuration="20000" ToolTipService.InitialShowDelay="500"
+                            Click="FowardBtn_ftpdia_Click"/>
+                    <Button x:Name="UpperBtn_ftpdia" Margin="5 5 0 0" Style="{StaticResource Style_UpperBtn}" 
+                            RenderOptions.BitmapScalingMode="HighQuality"
+                            ToolTip="상위폴더" ToolTipService.ShowDuration="20000" ToolTipService.InitialShowDelay="500"
+                            Click="UpperBtn_ftpdia_Click"/>
+                </StackPanel>
+
+                <!--EQP_path_list_all-->
+                <ListView Name="list_ftpdia"                      
+                          Margin="10 10 10 0"                      
+                          ItemsSource="{Binding source_ftpdia_all}"
+                          SelectionMode="Extended"
+                          Height="340"
+                          TextSearch.TextPath="ftp_all_filename"
+                          GridViewColumnHeader.Click="list_ftpdia_Click"
+                          PreviewMouseDoubleClick="list_ftpdia_PreviewMouseDoubleClick"
+                          Width="650">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="30"
+                                        HeaderContainerStyle="{StaticResource EqpHeaderStyle}">
+                                
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Image Source="{Binding ftp_all_src}"
+                                                   RenderOptions.BitmapScalingMode="HighQuality"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="이름" 
+                                        Width="275"
+                                        DisplayMemberBinding="{Binding ftp_all_filename}"
+                                        HeaderContainerStyle="{StaticResource EqpHeaderStyle}"                                        
+                                        x:Name="first_col3"/>
+                            <GridViewColumn Header="수정날짜" 
+                                        Width="160"
+                                        HeaderContainerStyle="{StaticResource EqpHeaderStyle}"
+                                        DisplayMemberBinding="{Binding ftp_all_date, StringFormat='{}{0:yyyy-MM-dd H:mm}'}"/>
+                            <GridViewColumn Header="유형" 
+                                        Width="77"
+                                        HeaderContainerStyle="{StaticResource EqpHeaderStyle}"
+                                        DisplayMemberBinding="{Binding ftp_all_extension}"
+                                        x:Name="sec_col1"/>
+                            <GridViewColumn Header="크기" 
+                                        Width="67"
+                                        HeaderContainerStyle="{StaticResource EqpHeaderStyle}"
+                                        DisplayMemberBinding="{Binding ftp_all_size}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+            
+            <!--EQP Filter-->
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="EQPID" FontWeight="Bold" Background="PaleGreen"  Foreground="Black" 
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 10 5 0"/>
+                    <Button x:Name="EQPIDResetBtn_ftpdia" Margin="0 5 0 0" HorizontalAlignment="Right" Style="{StaticResource Style_AllResetBtn}" KeyboardNavigation.AcceptsReturn="False" RenderOptions.BitmapScalingMode="HighQuality"                                 
+                            ToolTip="초기화" ToolTipService.ShowDuration="20000" ToolTipService.InitialShowDelay="500"
+                            Click="EQPIDResetBtn_ftpdia_Click"/>
+                </StackPanel>
+
+                <ComboBox x:Name="combo_ftpdia" Width="110" Height="20" Margin="10 5 10 0"
+                          VerticalContentAlignment="Center">
+                    
+                    <!--Add Code To Change Color-->
+
+                    <ComboBoxItem Content="C:\"/>
+                    <ComboBoxItem Content="D:\"/>
+                    <ComboBoxItem Content="E:\"/>
+                </ComboBox>
+
+                <ListBox x:Name="List_EQPID_ftpdia" Height="202" Width="110" Margin="5 5 5 0"
+                         ToolTip="더블클릭" ToolTipService.ShowDuration="3000" ToolTipService.InitialShowDelay="500"
+                         ItemsSource="{Binding source_EQP_Info_ftpdia}"                                                      
+                         DisplayMemberPath="strEQPID_ftpdia"
+                         SelectionMode="Single"
+                         Background="OldLace"
+                         PreviewMouseDoubleClick="List_EQPID_ftpdia_PreviewMouseDoubleClick">
+                </ListBox>
+                <TextBox x:Name="tb_EQPID_ftpdia" Background="OldLace" Width="110"
+                         Margin="5 7 5 0" CharacterCasing="Upper"
+                         TextChanged="tb_EQPID_ftpdia_TextChanged"/>
+                <Grid>
+                    <ProgressBar x:Name="pgb_ftpdia" Width="110" Height="20" Minimum="0" Maximum="100" 
+                                             Value="0" Margin="0 5 0 0"/>
+                    <TextBlock x:Name="pgbTxt_ftpdia" Width="110" Height="20" Margin="0 8 0 0"
+                               TextAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Button x:Name="select_ftpdia" Content="폴더(파일) 선택" 
+                        Margin="10 10 0 0" Width="110" Height="30"                      
+                        Background="Ivory"
+                        UseLayoutRounding="True"                    
+                        Click="select_ftpdia_Click"
+                        HorizontalAlignment="Left">
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="2" Direction="315" Color="Black" Opacity="0.5"/>
+                    </Button.Effect>
+                </Button>
+                <TextBlock x:Name="line_cureqp" Margin="10 10 0 0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

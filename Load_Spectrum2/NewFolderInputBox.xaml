@@ -1,0 +1,25 @@
+﻿<Window x:Class="Load_Spectrum2.NewFolderInputBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Load_Spectrum2"
+        mc:Ignorable="d"
+        Title="새폴더" Height="150" Width="250"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="새폴더 이름을 입력하세요." Margin="10 10 10 5"/>
+            <TextBox x:Name="Text_NewFolder" Margin="10 10 10 5"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btn_yes" Content="확인(Enter)" Height="25" Margin="10 10 5 5" Grid.Column="0" Click="btn_yes_Click"/>
+                <Button x:Name="btn_cancel" Content="취소(ESC)" Margin="5 10 10 5" Grid.Column="1" Click="btn_cancel_Click"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

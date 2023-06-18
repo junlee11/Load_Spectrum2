@@ -1,0 +1,13 @@
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\Load_Spectrum2.csproj.AssemblyReference.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\Load_Spectrum2.csproj.SuggestedBindingRedirects.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\DeleteYesNoBox.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\MainWindow.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\NewFolderInputBox.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\NewOverRideChk.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\perBusySpinner.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\RenameBox.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\RenameWarn.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\App.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\Load_Spectrum2_MarkupCompile.cache
+C:\Users\ijung\source\repos\Load_Spectrum2\Load_Spectrum2\obj\Release\Load_Spectrum2_MarkupCompile.lref
